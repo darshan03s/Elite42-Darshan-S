@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .container p:nth-child(1) {
+    color: green;
+  }
+  
+  .container p:nth-child(2) {
+    color: yellow;
+  }
+  
+  .container p:nth-child(3) {
+    color: purple;
+  }
+  
+  .main {
+    margin: 20px;
+  }
+  
+  .main p {
+    color: green;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .item {
+    background-color: lightgray;
+    width: 30%;
+    height: 100px;
+  }
+  
+  .parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px auto;
+  }
+  
+  .child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+  }
+  
