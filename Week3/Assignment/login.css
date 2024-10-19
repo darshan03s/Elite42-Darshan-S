@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+.login-container {
+    background-color: #d4dde5;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-group .icon {
+    padding: 10px;
+    background-color: #d4dde5;
+    font-size: 18px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3bafda;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3297c9;
+}
+
+.forgot-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.forgot-link a {
+    color: #3bafda;
+    text-decoration: none;
+}
