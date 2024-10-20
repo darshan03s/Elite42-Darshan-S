@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // outline: 1px solid lightgray;
+}
+
+body{
+    position: relative;
+}
+
+@mixin anchor {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    &:hover {
+        color: blue;
+    }
+}
+
+@mixin button {
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+header {
+    height: 16em;
+    background-image: url("./images/header.png");
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        align-items: center;
+        height: 2em;
+        position: fixed;
+        z-index: 1;
+        background-color: whitesmoke;
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            padding-right: 1em;
+
+            a {
+                @include anchor;
+            }
+        }
+    }
+}
+
+main {
+    padding: 0.5em;
+    position: relative;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-around;
+
+        .card {
+            max-width: 32%;
+            width: 32%;
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5em;
+            border: 1px solid lightgray;
+            border-radius: 1em;
+            &:hover {
+                background-color: whitesmoke;
+                transform: scale(1.05);
+                transition: transform 0.1s ease-in-out;
+            }
+
+            p {
+                padding: 0.5em;
+            }
+
+            button {
+                @include button;
+            }
+        }
+    }
+
+    .chat-icon {
+        position: fixed;
+        display: inline;
+        bottom: 0.5em;
+        right: 0.5em;
+    }
+}
+
+.popup{
+    background-color: lightgrey;
+    border-radius: 1em;
+    width: 300px;
+    height: 100px;
+    color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: medium;
+
+    button{
+        @include button;
+    }
+}

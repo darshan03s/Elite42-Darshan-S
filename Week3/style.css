@@ -1,21 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    padding: 10px;
+.container {
+  padding: 10px;
 }
 
-img{
-    float: right;
+img {
+  float: right;
 }
 
-p{
-    text-align: justify;
+p {
+  text-align: justify;
 }
 
-.clearfix{
-    clear: right;
+.clearfix {
+  clear: right;
 }
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.wrapper .box a {
+  text-decoration: none;
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */
